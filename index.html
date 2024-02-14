@@ -111,9 +111,10 @@
         <section id="score-section" class="score flex flex-col justify-center items-center text-center min-h-screen hidden">
             <div
                 class="space-y-6 text-white h-full p-9 rounded-2xl border-x-white border-y-white border-x-2 border-y-1 shadow-lg shadow-white bg-gradient-to-r from-pink-400 to-purple-700">
-                <h1 class="text-8xl "><span class="font-extrabold">Score : </span><span class="font-medium">0</span>
+                <h3 class="text-4xl text-red-700 font-medium">Game Over!</h3>
+                <h1 class="text-8xl "><span class="font-extrabold">Score : </span><span id="game-last-score" class="font-medium">0</span>
                 </h1>
-                <button class="btn text-black border-black  border-x-1 border-y-1 text-2xl font-medium">Play
+                <button id="playAgain-btn" onclick="playAgain()" class="btn text-black border-black  border-x-1 border-y-1 text-2xl font-medium">Play
                     Again</button>
                 <p class="text-lg font-normal">Practice will make you a pro!</p>
             </div>

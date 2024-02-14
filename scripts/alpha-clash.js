@@ -1,4 +1,17 @@
 
+function playAgain(){
+    hideElementById('score-section');
+    showElementById('playground-screen');
+
+    // get previous values
+    setPreviousValueById('current-life-left', 3);
+    setPreviousValueById('current-score', 0);
+}
+
+
+
+
+
 // keyboard interactions
 
 function keyBoardButtonPress(e) {
@@ -30,8 +43,8 @@ function keyBoardButtonPress(e) {
         currentLifeElement.innerText = newLife;
 
         if (newLife === 0) {
-            hideElementById('playground-screen');
-            showElementById('score-section');
+            
+            gameOver();
         }
     }
 }

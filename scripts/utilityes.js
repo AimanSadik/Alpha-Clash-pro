@@ -1,4 +1,20 @@
 
+function setPreviousValueById(elementId, value){
+    const element = document.getElementById(elementId);
+    element.innerText = value;
+
+}
+
+function gameOver(){
+    hideElementById('playground-screen');
+    showElementById('score-section');
+
+    const lastScore = setPreviousValueById('current-score');
+    setPreviousValueById('game-last-score', lastScore);
+    return lastScore;
+}
+
+
 function setBackgroundColor(elementId){
     const element = document.getElementById(elementId)
     element.classList.add('bg-orange-500');
