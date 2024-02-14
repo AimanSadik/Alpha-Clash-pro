@@ -11,6 +11,8 @@ function continueGame() {
 
     const currentAlphaberElement = document.getElementById('display-alphabet');
     currentAlphaberElement.innerText = alphabet;
+
+    setBackgroundColor(alphabet);
 }
 
 
