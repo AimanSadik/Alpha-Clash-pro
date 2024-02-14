@@ -50,7 +50,7 @@
                 </div>
                 <!-- keyboard -->
                 <div>
-                    <div>
+                    <div  class="flex flex-col justify-center items-center text-center">
                         <div class="flex h-[73px] w-[600px] justify-center items-center text-3xl gap-2 my-1">
                             <kbd id="q" class="kbd">q</kbd>
                             <kbd id="w" class="kbd">w</kbd>
@@ -74,7 +74,9 @@
                             <kbd id="k" class="kbd">k</kbd>
                             <kbd id="l" class="kbd">l</kbd>
                         </div>
-                        <div class="flex h-[73px] w-[600px] justify-center items-center text-3xl gap-2 my-1">
+                        <div class="flex h-[73px] w-[709px] justify-center items-center text-3xl gap-2 my-1">
+                            
+                            
                             <kbd id="z" class="kbd">z</kbd>
                             <kbd id="x" class="kbd">x</kbd>
                             <kbd id="c" class="kbd">c</kbd>
@@ -83,33 +85,33 @@
                             <kbd id="n" class="kbd">n</kbd>
                             <kbd id="m" class="kbd">m</kbd>
                             <kbd id="/" class="kbd">/</kbd>
+                            
                         </div>
                     </div>
-
                 </div>
                 <!-- coins -->
                 <div class="flex w-3/4 justify-between">
                     <div>
 
-                        <button class="flex  border-white border-x-2 border-y-2  text-xl px-3 py-2 gap-2 rounded-full text-white  bg-pink-500">Life<img
+                        <button class="flex  border-white border-x-2 border-y-2  text-xl px-4 py-2 gap-2 rounded-full text-white  bg-pink-500">Life<img
                                 class="h-[24px] w-[24px] bg-red-700 rounded-full" src="images/heart-regular.svg"
-                                alt=""><span>1</span></button>
+                                alt=""><span id="current-life-left">3</span></button>
                     </div>
 
                     <div>
-                        <button class="flex  border-white border-x-2 border-y-2  text-lg px-3 py-2 gap-2 rounded-full text-white  bg-pink-500">Coins<img
+                        <button class="flex  border-white border-x-2 border-y-2  text-lg px-4 py-2 gap-2 rounded-full text-white  bg-pink-500">Point's<img
                                 class="h-[24px] w-[24px] bg-yellow-600  rounded-full" src="images/dollar.svg"
-                                alt=""><span>1</span></button>
+                                alt=""><span id="current-score">0</span></button>
                     </div>
                 </div>
             </div>
 
         </section>
         <!-- score section -->
-        <section class="score flex flex-col justify-center items-center text-center min-h-screen hidden">
+        <section id="score-section" class="score flex flex-col justify-center items-center text-center min-h-screen hidden">
             <div
                 class="space-y-6 text-white h-full p-9 rounded-2xl border-x-white border-y-white border-x-2 border-y-1 shadow-lg shadow-white bg-gradient-to-r from-pink-400 to-purple-700">
-                <h1 class="text-8xl "><span class="font-extrabold">Score : </span><span class="font-medium">15</span>
+                <h1 class="text-8xl "><span class="font-extrabold">Score : </span><span class="font-medium">0</span>
                 </h1>
                 <button class="btn text-black border-black  border-x-1 border-y-1 text-2xl font-medium">Play
                     Again</button>
