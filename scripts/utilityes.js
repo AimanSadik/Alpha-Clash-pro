@@ -1,4 +1,14 @@
 
+function setElementTextById(elementId){
+    const element = document.getElementById(elementId);
+    const text = element.innerText;
+    return text;
+}
+
+
+
+
+
 function setPreviousValueById(elementId, value){
     const element = document.getElementById(elementId);
     element.innerText = value;
@@ -9,9 +19,8 @@ function gameOver(){
     hideElementById('playground-screen');
     showElementById('score-section');
 
-    const lastScore = setPreviousValueById('current-score');
+    const lastScore =  setElementTextById('current-score');
     setPreviousValueById('game-last-score', lastScore);
-    return lastScore;
 }
 
 
